@@ -5,7 +5,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 #nltk.download('vader_lexicon')
 import matplotlib.pyplot as plt
 # read csv and store text of tweets in pandas Series
-boris = pd.read_csv('../cchqpress.csv')
+boris = pd.read_csv('../conservatives.csv')
 jerem = pd.read_csv('../uklabour.csv')
 tweet_boris = boris['text']
 tweet_jerem = jerem['text']
@@ -30,6 +30,6 @@ ax1 = plt.axes()
 jsents.hist(ax=ax1)
 plt.title("uklabour")
 bsents.hist()
-plt.title("cchqpress")
+plt.title("Conservatives")
 plt.show()
 
